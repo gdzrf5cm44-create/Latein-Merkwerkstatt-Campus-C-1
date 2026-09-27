@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Latein-Merkwerkstatt</title>
+<style>
+:root{--ink:#263238;--paper:#fbf7ed;--sand:#e7d3a6;--ochre:#c99a46;--sage:#aab99a;--terr:#bf765f;--blue:#91b6c3;--line:#d8ccb4}
+*{box-sizing:border-box} body{margin:0;background:#efe8da;color:var(--ink);font-family:ui-rounded,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.app{max-width:760px;margin:auto;min-height:100vh;background:var(--paper);padding:22px 18px 38px}
+h1,h2,h3{font-family:Georgia,serif;margin:.25em 0}.eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:#776a54}
+.hero{padding:18px;border:1.5px solid var(--line);border-radius:24px;background:linear-gradient(135deg,#fffaf0,#f0e3c7)}
+.hero h1{font-size:34px}.sub{color:#6e6557;line-height:1.45}.row{display:flex;gap:10px;flex-wrap:wrap}.card{background:#fffdf8;border:1.5px solid var(--line);border-radius:20px;padding:16px;margin:12px 0;box-shadow:0 4px 16px #6b573512}
+button{border:0;border-radius:16px;padding:13px 16px;font-size:16px;font-weight:700;background:var(--ink);color:white;cursor:pointer}
+button.alt{background:#e8deca;color:var(--ink)}button.good{background:#607b63}button.bad{background:#9b5b50}button.choice{width:100%;text-align:left;background:#f2eadb;color:var(--ink);margin:6px 0}
+.pills{display:flex;gap:8px;flex-wrap:wrap}.pill{padding:8px 11px;border-radius:999px;background:#eee4d1;font-size:13px}
+.lesson{flex:1;min-width:120px}.lesson strong{font-family:Georgia,serif;font-size:21px}.bigword{font:700 42px Georgia,serif;text-align:center;margin:24px 0 8px}.meaning{text-align:center;font-size:23px;font-weight:800;color:#684d34}.bridge{background:#f0e6cc;border-left:5px solid var(--ochre);padding:15px;border-radius:12px;margin:16px 0;line-height:1.5}
+.scene{font-size:48px;text-align:center;margin:12px}.muted{color:#756c60}.progress{height:10px;background:#e8dfcf;border-radius:99px;overflow:hidden}.bar{height:100%;background:var(--sage);width:0}.hidden{display:none!important}
+input{width:100%;padding:14px;border:1.5px solid var(--line);border-radius:14px;background:white;font-size:17px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.tiny{font-size:12px;color:#766d61}.stat{font-size:28px;font-family:Georgia,serif;font-weight:700}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.grid .card{text-align:center;margin:0;padding:12px}
+@media(max-width:500px){.hero h1{font-size:29px}.bigword{font-size:38px}.app{padding:15px 13px}.grid{grid-template-columns:1fr 1fr}}
+</style></head>
+<body><main class="app">
+<section id="home">
+<div class="hero"><div class="eyebrow">Campus C · Lektionen 1–3</div><h1>Latein-Merkwerkstatt</h1><p class="sub">Neue Wörter schnell im Gedächtnis verankern: Klanganker, Bild, Fremdwort und sofortiger Abruf. Schwierige Wörter bekommen automatisch mehr Hilfe.</p></div>
+<div class="card"><h3>Wer lernt?</h3><input id="name" value="Sophia" aria-label="Name"><p class="tiny">Der Lernstand bleibt nur auf diesem Gerät gespeichert.</p></div>
+<div class="row">
+<button class="lesson" onclick="start(1)"><strong>Lektion 1</strong><br><span>13 Wörter</span></button>
+<button class="lesson" onclick="start(2)"><strong>Lektion 2</strong><br><span>17 Wörter</span></button>
+<button class="lesson" onclick="start(3)"><strong>Lektion 3</strong><br><span>15 Wörter</span></button>
+</div>
+<div class="card"><h3>🚀 10-Minuten-Merkturbo</h3><p class="sub">Bekannte Wörter überspringen. Neue Wörter kurz verankern. Dann sofort ohne Hilfe abrufen. Fehler kommen am Ende erneut.</p><button onclick="start('mix')">Gemischt starten</button></div>
+<div class="grid"><div class="card"><div class="stat" id="sKnown">0</div><div class="tiny">sicher</div></div><div class="card"><div class="stat" id="sLearning">0</div><div class="tiny">im Aufbau</div></div><div class="card"><div class="stat" id="sHard">0</div><div class="tiny">knifflig</div></div></div>
+</section>
+
+<section id="learn" class="hidden">
+<div class="top"><button class="alt" onclick="home()">←</button><div><b id="who"></b><div class="tiny" id="phase"></div></div><div id="count"></div></div>
+<div class="progress"><div class="bar" id="bar"></div></div>
+<div id="screen"></div>
+</section>
+</main>
+<script>
+const L={
+1:[
+["puella","das Mädchen","Klang","Stell dir ein Mädchen vor, das ständig „Puh, Ella!“ ruft.","👧💨","Puh, Ella! → puella → Mädchen"],
+["serva","die Sklavin / Dienerin","Wortfamilie","SERVieren: Eine Dienerin serviert.","🍽️","servieren → serva"],
+["silva","der Wald","Klang","Silva läuft durch einen wilden Wald.","🌲🌲","Silva → Wald"],
+["via","der Weg / die Straße","Fremdwort","„via München“ bedeutet: über / auf dem Weg über München.","🛣️","via → Weg"],
+["villa","das Haus / Landhaus","Fremdwort","Eine Villa ist ein großes Haus.","🏡","Villa → Haus"],
+["avus","der Großvater","Bild","Opa ruft erstaunt: „Ah, was?“","👴❓","„Ah, was?“ → avus → Großvater"],
+["campus","das Feld / der freie Platz","Fremdwort","Ein Campus ist ein großes Gelände.","🏛️","Campus → freier Platz"],
+["equus","das Pferd","Klang","Ein Pferd macht einen riesigen EQUUS-Sprung.","🐎","equus → Pferd"],
+["murus","die Mauer","Klang","Eine Maus rennt an der Mauer entlang: MU-rus.","🐭🧱","MUrus → Mauer"],
+["servus","der Sklave / Diener","Fremdwort","„Servus!“ sagt der Diener beim Begrüßen.","🙋","Servus → Diener"],
+["vicus","das Dorf / die Gasse","Klang","Vicky wohnt in einem kleinen Dorf.","🏘️","Vicky → vicus → Dorf"],
+["et","und / auch","Minianker","ET verbindet zwei Dinge: A ET B.","🔗","et = und"],
+["familia","die Familie","Fremdwort","familia klingt fast wie Familie.","👨‍👩‍👧","familia → Familie"]
+],
+2:[
+["esse","sein / sich befinden","Klang","ESSE ist ganz einfach: etwas IST.","✨","esse → sein"],
+["est","er/sie/es ist","Minianker","EST = ist. Nur ein Buchstabe verändert sich.","1️⃣","est → ist"],
+["sunt","sie sind","Klang","SUN(T): Mehrere sind in der Sonne.","☀️👥","sunt → sie sind"],
+["amica","die Freundin","Fremdwort","amica erinnert an amicable: freundlich.","👭","amica → Freundin"],
+["ridēre","lachen / auslachen","Klang","Beim RIDEn auf dem Pferd musst du lachen.","🐎😂","ride → ridēre → lachen"],
+["nōn","nicht","Minianker","NO = nein. nōn = nicht.","🚫","no → nōn → nicht"],
+["cūr?","warum?","Klang","„KUR? Warum muss ich zur Kur?“","❓","Kur? → cūr? → warum?"],
+["pārēre","gehorchen","Klang","Ein Paar hört aufs Kommando und gehorcht.","👂","Paar → pārēre → gehorchen"],
+["monēre","mahnen / ermahnen","Fremdwort","monieren heißt etwas beanstanden.","☝️","monieren → monēre → mahnen"],
+["dēbēre","müssen / sollen","Fremdwort","debit = Schuld: Man MUSS bezahlen.","💳","debit → dēbēre → müssen"],
+["quid?","was?","Fremdwort","quid pro quo – quid fragt: WAS?","❔","quid? → was?"],
+["timēre","fürchten / Angst haben","Klang","Tim hat Angst: TIM-ēre.","😨","Tim → timēre → fürchten"],
+["oculus","das Auge","Fremdwort","Okular: Damit schaut man – mit dem Auge.","👁️","Okular → oculus → Auge"],
+["dolēre","schmerzen / wehtun","Klang","Dolle Schmerzen tun weh.","🤕","dolle → dolēre → wehtun"],
+["nunc","nun / jetzt","Klang","NUN! Jetzt sofort!","⏱️","nun → nunc → jetzt"],
+["Lydus servus","der Sklave Lydus","Direkt","Lydus ist der Name, servus bedeutet Diener/Sklave.","🧑","Lydus + servus"],
+["tacēre","schweigen / verschweigen","Klang","TA! Keinen Ton mehr – schweigen.","🤫","ta… → tacēre → schweigen"]
+],
+3:[
+["hic","hier","Klang","HICK! Genau HIER hat jemand Schluckauf.","📍","hic → hier"],
+["dominus","der Herr","Fremdwort","dominieren: Der Herr bestimmt.","👑","dominieren → dominus → Herr"],
+["ibi","dort","Bild","Hier? Nein – IBI ist dort drüben.","👉","ibi → dort"],
+["sedēre","sitzen","Fremdwort","sedentär = viel sitzend.","🪑","sedentär → sedēre → sitzen"],
+["sed","aber / sondern","Kontrast","SED setzt einen Gegensatz: nicht X, sondern Y.","↔️","sed → aber/sondern"],
+["respondēre","antworten","Fremdwort","respond = antworten.","💬","respond → respondēre"],
+["augēre","vergrößern / vermehren","Fremdwort","augmentieren bedeutet vergrößern.","📈","augment → augēre"],
+["nam","denn / nämlich","Klang","NAMe den Grund – nämlich…","🧩","nam → denn"],
+["tamen","dennoch / jedoch","Klang","Trotzdem! TAMEN = dennoch.","🛡️","tamen → dennoch"],
+["adhūc","bis jetzt / noch","Bild","Die Uhr läuft NOCH bis jetzt.","🕰️","adhūc → noch"],
+["neque","und nicht / auch nicht","Minianker","NE = nicht; neque verbindet: und nicht.","🚫🔗","neque → und nicht"],
+["neque … neque","weder … noch","Paar","Zwei neque bilden ein Paar: weder … noch.","🚫🚫","neque … neque"],
+["quis?","wer?","Klang","QUIZ-Frage: WER ist es?","🕵️","Quiz → quis? → wer?"],
+["docēre","lehren / unterrichten","Fremdwort","Dozent = jemand, der lehrt.","👩‍🏫","Dozent → docēre"],
+["lingua","die Sprache / Rede","Fremdwort","linguistisch = die Sprache betreffend.","👅💬","Linguistik → lingua"]
+]};
+let deck=[],i=0,round=0,missed=[],current=null,mode="mix";
+const $=x=>document.getElementById(x);
+const norm=s=>(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[.,!?]/g,"").trim();
+function store(){return JSON.parse(localStorage.getItem("merkwerkstatt")||"{}")}
+function save(k,v){let s=store();s[k]=v;localStorage.setItem("merkwerkstatt",JSON.stringify(s));stats()}
+function key(w){return "w:"+w[0]}
+function stats(){let s=store(),a=Object.keys(s).filter(k=>k.startsWith("w:")).map(k=>s[k]);$("sKnown").textContent=a.filter(x=>x>=3).length;$("sLearning").textContent=a.filter(x=>x>0&&x<3).length;$("sHard").textContent=a.filter(x=>x<0).length}
+function home(){$("learn").classList.add("hidden");$("home").classList.remove("hidden");stats()}
+function start(l){mode=l;let n=$("name").value.trim()||"Sophia";localStorage.setItem("merkname",n);$("who").textContent=n+" · "+(l==="mix"?"Merkturbo":"Lektion "+l);deck=l==="mix"?[...L[1],...L[2],...L[3]].sort(()=>Math.random()-.5).slice(0,18):[...L[l]];i=0;round=0;missed=[];$("home").classList.add("hidden");$("learn").classList.remove("hidden");showTriage()}
+function prog(){$("count").textContent=(Math.min(i+1,deck.length))+"/"+deck.length;$("bar").style.width=((i/deck.length)*100)+"%"}
+function showTriage(){if(i>=deck.length){round=1;i=0;deck=deck.filter(w=>(store()[key(w)]||0)<3);if(!deck.length)return done();return showBridge()}current=deck[i];prog();$("phase").textContent="1 · Blitzcheck";$("screen").innerHTML=`<div class="card"><div class="eyebrow">Kennst du dieses Wort schon?</div><div class="bigword">${current[0]}</div><div class="row" style="justify-content:center"><button class="good" onclick="known()">Weiß ich ✓</button><button class="alt" onclick="reveal()">Noch nicht</button></div><div id="rev"></div></div>`}
+function reveal(){$("rev").innerHTML=`<div class="meaning">${current[1]}</div><p class="tiny" style="text-align:center">Nicht schlimm – jetzt bauen wir eine Gedächtnisbrücke.</p><div style="text-align:center"><button onclick="need()">Merkhilfe bauen →</button></div>`}
+function known(){let v=store()[key(current)]||0;save(key(current),Math.max(v,3));i++;showTriage()}
+function need(){save(key(current),Math.min(store()[key(current)]||0,0));showOneBridge(current)}
+function showBridge(){if(i>=deck.length){round=2;i=0;return recall()}current=deck[i];showOneBridge(current)}
+function showOneBridge(w){prog();$("phase").textContent="2 · Verankern";$("screen").innerHTML=`<div class="card"><div class="eyebrow">${w[2]}</div><div class="bigword">${w[0]}</div><div class="scene">${w[4]}</div><div class="meaning">${w[1]}</div><div class="bridge"><b>Merkbrücke</b><br>${w[3]}<br><span class="muted">${w[5]}</span></div><p class="tiny">Schau die Szene kurz an. Sag Lateinwort und Bedeutung einmal laut.</p><button onclick="flash()">Im Kopf gespeichert →</button></div>`}
+function flash(){$("screen").innerHTML=`<div class="card"><div class="eyebrow">5-Sekunden-Abruf</div><div class="bigword">${current[0]}</div><p style="text-align:center">Was bedeutet es?</p><input id="ans" autocomplete="off" placeholder="Bedeutung eintippen …"><div style="margin-top:10px"><button onclick="check()">Prüfen</button></div></div>`;$("ans").focus()}
+function check(){let a=norm($("ans").value), opts=current[1].split("/").map(norm),ok=opts.some(x=>a.includes(x)||x.includes(a));$("screen").innerHTML=`<div class="card"><div class="bigword">${current[0]}</div><div class="meaning">${current[1]}</div><div class="bridge">${ok?"✓ Genau. Die Verbindung sitzt schon.":"Noch nicht sicher. Denk noch einmal an: <b>"+current[5]+"</b>"}</div><button onclick="nextBridge(${ok})">${ok?"Weiter →":"Nochmal merken →"}</button></div>`}
+function nextBridge(ok){let v=store()[key(current)]||0;if(ok)save(key(current),Math.max(1,v+1));else{save(key(current),Math.min(-1,v-1));missed.push(current)}i++;showBridge()}
+function recall(){if(i>=deck.length){if(missed.length){deck=[...new Map(missed.map(w=>[w[0],w])).values()];missed=[];i=0;round=3}else return done()}current=deck[i];prog();$("phase").textContent=round===3?"4 · Knifflige Wörter":"3 · Ohne Hilfe";$("screen").innerHTML=`<div class="card"><div class="eyebrow">${round===3?"Noch eine Chance":"Jetzt ohne Eselsbrücke"}</div><div class="bigword">${current[0]}</div><input id="ans" placeholder="Deutsche Bedeutung …" autocomplete="off"><div style="margin-top:10px"><button onclick="checkRecall()">Abrufen</button></div><button class="alt" style="margin-top:8px" onclick="hint()">Kleine Hilfe</button><div id="hint"></div></div>`;$("ans").focus()}
+function hint(){$("hint").innerHTML=`<div class="bridge">${current[4]} ${current[5]}</div>`}
+function checkRecall(){let a=norm($("ans").value),opts=current[1].split("/").map(norm),ok=opts.some(x=>a.includes(x)||x.includes(a));let v=store()[key(current)]||0;if(ok)save(key(current),Math.max(2,v+1));else{save(key(current),Math.min(-1,v-1));missed.push(current)}$("screen").innerHTML=`<div class="card"><div class="bigword">${current[0]}</div><div class="meaning">${current[1]}</div><div class="bridge">${ok?"✓ Richtig – ohne direkte Vorgabe abgerufen.":"Noch nicht. Deine Brücke: "+current[5]}</div><button onclick="nextRecall()">${ok?"Weiter →":"Weiter – kommt nochmal →"}</button></div>`}
+function nextRecall(){i++;recall()}
+function done(){let s=store(),all=[...L[1],...L[2],...L[3]],known=all.filter(w=>(s[key(w)]||0)>=3).length,learning=all.filter(w=>(s[key(w)]||0)>0&&(s[key(w)]||0)<3).length,hard=all.filter(w=>(s[key(w)]||0)<0).length;$("bar").style.width="100%";$("phase").textContent="Fertig";$("screen").innerHTML=`<div class="hero"><div class="eyebrow">Merkrunde geschafft</div><h2>Gut verankert.</h2><p class="sub">Die schwierigen Wörter werden bei der nächsten Runde wieder bevorzugt.</p><div class="grid"><div class="card"><div class="stat">${known}</div><div class="tiny">sicher</div></div><div class="card"><div class="stat">${learning}</div><div class="tiny">im Aufbau</div></div><div class="card"><div class="stat">${hard}</div><div class="tiny">knifflig</div></div></div><button onclick="home()">Zur Lektionsauswahl</button></div>`}
+$("name").value=localStorage.getItem("merkname")||"Sophia";stats();
+</script></body></html>
