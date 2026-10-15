@@ -1,0 +1,251 @@
+{
+  "style": "Four square watercolor-and-ink Roman mnemonic scenes in a strict 2×2 grid. Blank parchment labels at bottom center are typeset by the app. Built-in image generation.",
+  "panels": [
+    {
+      "latin": "statim",
+      "anchor": "„START, TIM!“ Tim schießt SOFORT wie eine Rakete vom Startblock. statim = sofort.",
+      "scene": "Ein Startsignal löst sofort Tims Raketenstart aus.",
+      "prompt": "A teenage Roman boy named Tim launches instantly from a racing starting block with exaggerated rocket-like dust trails when a referee raises a starting flag. Funny, no actual rockets or fire.",
+      "atlas": 1,
+      "panel": 0
+    },
+    {
+      "latin": "numquam",
+      "anchor": "„Nimm Quark?“ – „NIEMALS!“ Der Kaiser schiebt die riesige Quarkschüssel empört weg. numquam = niemals.",
+      "scene": "Ein Kaiser lehnt eine riesige Schüssel Quark entschieden ab.",
+      "prompt": "A Roman emperor emphatically refuses an enormous bowl of white quark, crossing his arms with a comically horrified expression, a cook offering a spoon.",
+      "atlas": 1,
+      "panel": 1
+    },
+    {
+      "latin": "saepe",
+      "anchor": "SEPP kommt OFT zum Brunnen: Seine vielen Fußspuren verraten ihn. Oft heißt wiederholt, aber nicht jedes Mal.",
+      "scene": "Sepp besucht den Brunnen oft; viele Fußspuren führen dorthin.",
+      "prompt": "A Roman schoolboy repeatedly visits a fountain. Many looping muddy footprints lead to the fountain, three tiny earlier ghosted poses suggest repeated visits, while one other activity still exists. Funny thirsty boy with huge cup.",
+      "atlas": 1,
+      "panel": 2
+    },
+    {
+      "latin": "semper",
+      "anchor": "SEMPER-MAN hilft IMMER: bei Sonne, Regen und sogar nachts im Schlafanzug! semper = immer.",
+      "scene": "Semper-Man hilft bei jedem Wetter und zu jeder Tageszeit.",
+      "prompt": "A friendly Roman teen superhero with a cape and pyjama trousers helps a little duck across a puddle. Above him three small sun, rain cloud, moon icons indicate always, all times, no writing.",
+      "atlas": 1,
+      "panel": 3
+    },
+    {
+      "latin": "subitō",
+      "anchor": "Ein U-Boot sitzt im Tontopf – und schießt PLÖTZLICH heraus! SUB erinnert an subitō.",
+      "scene": "Ein winziges U-Boot taucht plötzlich aus einem römischen Tontopf auf.",
+      "prompt": "A tiny playful yellow submarine unexpectedly pops straight out of an ordinary Roman terracotta pot in a schoolroom. Two Roman teens jump in surprise, water splashes, absurd and harmless.",
+      "atlas": 2,
+      "panel": 0
+    },
+    {
+      "latin": "tantum",
+      "anchor": "Tante TUM bekommt NUR einen winzigen Krümel von der Riesentorte. tantum = nur.",
+      "scene": "Eine Tante bekommt nur einen winzigen Kuchenkrümel.",
+      "prompt": "A Roman aunt with an enormous empty plate looks in disbelief at a single tiny cake crumb, next to an enormous cake protected by a mischievous duck. Focus on only one crumb.",
+      "atlas": 2,
+      "panel": 1
+    },
+    {
+      "latin": "cui?",
+      "anchor": "„KUH, WEM gibst du die Blume?“ Die Kuh reicht sie dem Kaiser. cui? fragt nach dem Empfänger: WEM?",
+      "scene": "Eine Kuh gibt dem Kaiser eine Blume. Wem gibt sie die Blume?",
+      "prompt": "A friendly cow wearing a Roman laurel wreath gives a flower to a surprised emperor. A schoolgirl points clearly at the RECEIVING emperor with a questioning expression. Recipient is visually emphasized.",
+      "atlas": 2,
+      "panel": 2
+    },
+    {
+      "latin": "etiam",
+      "anchor": "Alle essen – AUCH der Esel am Tisch, SOGAR mit einer Serviette! etiam = auch, sogar.",
+      "scene": "Auch der Esel sitzt mit Serviette am Esstisch.",
+      "prompt": "Roman children dine at a table; surprisingly a cheerful donkey joins them sitting upright with a napkin and spoon, even the donkey participates. Warm humorous.",
+      "atlas": 2,
+      "panel": 3
+    },
+    {
+      "latin": "iterum",
+      "anchor": "„Bitte wieder RUM!“ Der Wagen rollt ZUM ZWEITEN MAL um denselben Brunnen. iterum = wiederum.",
+      "scene": "Ein Wagen fährt zum zweiten Mal um denselben Brunnen.",
+      "prompt": "A silly Roman teen drives a tiny chariot a second time around a round fountain, two looping sets of tracks, large repeated circular arrow built from flowers, no numbers or writing.",
+      "atlas": 3,
+      "panel": 0
+    },
+    {
+      "latin": "itaque",
+      "anchor": "Der Esel niest – DESHALB fliegt die Perücke des Kaisers weg. itaque verbindet Grund und Folge.",
+      "scene": "Der Esel niest; deshalb fliegt die Perücke weg.",
+      "prompt": "A donkey sneezes powerfully in a Roman courtyard, and as a direct consequence an emperor’s absurd curly wig flies off. Clear visible puff trail connects cause and effect, funny.",
+      "atlas": 3,
+      "panel": 1
+    },
+    {
+      "latin": "profectō",
+      "anchor": "Der PROFESSOR hebt sein Tuch: TATSÄCHLICH sitzt eine Ente darunter! Jetzt ist es SICHERLICH bewiesen.",
+      "scene": "Ein Professor beweist: Unter seinem Tuch sitzt tatsächlich eine Ente.",
+      "prompt": "An eccentric Roman professor in oversized spectacles reveals a real little duck under a lifted purple cloth on a table. Two amazed students inspect the undeniable evidence with a magnifying glass.",
+      "atlas": 3,
+      "panel": 2
+    },
+    {
+      "latin": "nōn",
+      "anchor": "„NO!“ Der Kaiser winkt ab: Ich esse den Sandalenkuchen NICHT. nōn = nicht.",
+      "scene": "Der Kaiser isst einen Kuchen aus Sandalen nicht.",
+      "prompt": "A Roman emperor clearly refuses a ridiculous cake made of sandals, palm held forward in a no gesture, closed mouth, chef confused. Large playful red crossed circle on the cake decoration, no letters.",
+      "atlas": 3,
+      "panel": 3
+    },
+    {
+      "latin": "cūr?",
+      "anchor": "„Warum zur KUR?“ Ein kerngesunder Esel liegt mit Gurkenscheiben im Wellnessbad. cūr? = warum?",
+      "scene": "Warum braucht dieser gesunde Esel eine Kur?",
+      "prompt": "A perfectly healthy donkey enjoys a luxurious Roman spa bath with cucumber slices on its eyes; a puzzled Roman schoolgirl shrugs at this absurd sight. Questioning why, comical.",
+      "atlas": 4,
+      "panel": 0
+    },
+    {
+      "latin": "quid?",
+      "anchor": "„QUITTE? WAS ist denn das?“ Ein Schüler untersucht eine riesige gelbe Quitte. quid? fragt WAS.",
+      "scene": "Was ist das? Ein Schüler untersucht eine riesige Quitte.",
+      "prompt": "A Roman schoolboy investigates a gigantic yellow quince fruit on a table with a magnifying glass, puzzled what this object is; fruit deliberately enormous and funny.",
+      "atlas": 4,
+      "panel": 1
+    },
+    {
+      "latin": "nunc",
+      "anchor": "„NUN!“ Der Gong dröhnt – JETZT springen alle gleichzeitig los. nunc = nun, jetzt.",
+      "scene": "Der Gong schlägt jetzt; alle springen im selben Moment hoch.",
+      "prompt": "An enormous Roman school gong rings right now, three Roman children jump simultaneously at that very instant, dramatic concentric ringing motion, no written onomatopoeia.",
+      "atlas": 4,
+      "panel": 2
+    },
+    {
+      "latin": "hic",
+      "anchor": "„HICK!“ Der Schluckauf hüpft HIER direkt vor deinen Füßen. hic = hier.",
+      "scene": "Ein Schüler zeigt beim Schluckauf hier auf seine eigenen Füße.",
+      "prompt": "A Roman schoolgirl with hiccups points directly to a bright circle immediately around her own feet, a tiny surprised frog jumps right there. Clear HERE close to the viewer.",
+      "atlas": 4,
+      "panel": 3
+    },
+    {
+      "latin": "ibi",
+      "anchor": "„Ih, BIENE!“ Sie sitzt DORT drüben auf der Statue – weit weg von dir. ibi = dort.",
+      "scene": "Dort drüben sitzt eine riesige Biene auf der Statue.",
+      "prompt": "A Roman schoolboy in the near foreground points to a faraway statue across a courtyard; a funny oversized bee sits on that distant statue. Clear far distance with perspective.",
+      "atlas": 5,
+      "panel": 0
+    },
+    {
+      "latin": "sed",
+      "anchor": "„SÄT?“ Du säst Blumen, ABER es wachsen Löffel! sed = aber; nach einer Verneinung auch: sondern.",
+      "scene": "Du säst Blumen, aber aus dem Beet wachsen Löffel.",
+      "prompt": "A Roman gardener expects flowers in a flowerbed but instead shiny spoons sprout from the soil. He holds a packet illustrated with a flower without writing, comical strong contrast.",
+      "atlas": 5,
+      "panel": 1
+    },
+    {
+      "latin": "nam",
+      "anchor": "„NAM-NAM!“ Der Esel schmatzt, DENN er hat Hunger. Er frisst NÄMLICH die ganze Torte. nam nennt den Grund.",
+      "scene": "Der Esel frisst, denn er hat Hunger.",
+      "prompt": "A ravenously hungry donkey happily munches a giant cake in a Roman kitchen, one hoof resting on its hungry belly, crumbs flying. A Roman child understands the reason and points at the belly.",
+      "atlas": 5,
+      "panel": 2
+    },
+    {
+      "latin": "neque",
+      "anchor": "Der Esel trägt die Tafel – UND NICHT den Kaiser. Den lässt er nebenher laufen. neque = und nicht, auch nicht.",
+      "scene": "Der Esel trägt eine Schreibtafel und den Kaiser nicht.",
+      "prompt": "A donkey happily carries one small Roman writing tablet, while a sulking emperor is forced to walk beside it and is refused a ride. Clear addition and refusal; funny.",
+      "atlas": 5,
+      "panel": 3
+    },
+    {
+      "latin": "neque … neque",
+      "anchor": "„NE, NE!“ WEDER die Sandale NOCH die Socke kommt in die Suppe. Beide fliegen aus dem Topf!",
+      "scene": "Weder Sandale noch Socke dürfen in die Suppe.",
+      "prompt": "A Roman chef resolutely rejects BOTH a sandal and a sock offered for a cooking pot, pushing each away with a separate hand. Two clear refusal gestures, both objects remain outside soup.",
+      "atlas": 6,
+      "panel": 0
+    },
+    {
+      "latin": "quis?",
+      "anchor": "Die QUIZ-Frage lautet: WER steckt unter dem Laken? Die Hufe verraten den Esel! quis? = wer?",
+      "scene": "Wer steckt unter dem Laken? Ein Esel spielt Quiz.",
+      "prompt": "A Roman child hosts a playful guessing game: an unidentified character under a white sheet has donkey hooves and ears sticking out, another child asks who it is. Comical mystery identity.",
+      "atlas": 6,
+      "panel": 1
+    },
+    {
+      "latin": "bene",
+      "anchor": "„BENE, gut gemacht!“ Bene balanciert die Riesentorte GUT – kein Krümel fällt herunter. bene = gut.",
+      "scene": "Bene balanciert die Torte gut und bekommt einen Daumen hoch.",
+      "prompt": "A cheerful Roman boy successfully balances an enormous multi-layer cake on one hand perfectly level, teacher gives a big thumbs up, little duck admires, clear doing something well.",
+      "atlas": 6,
+      "panel": 2
+    },
+    {
+      "latin": "prīmō",
+      "anchor": "Der PRIMUS will ZUERST durch die Tür – seine riesige Feder steckt schon darin! prīmō = zuerst.",
+      "scene": "Zuerst geht der Schüler mit der riesigen Feder durch die Tür.",
+      "prompt": "At a Roman school doorway the very first pupil in a queue steps through, his ridiculously tall feather plume sticks in the doorway, others clearly wait behind him. Clear first in sequence.",
+      "atlas": 6,
+      "panel": 3
+    },
+    {
+      "latin": "rēctē",
+      "anchor": "„KORREKT!“ Der Schüler setzt den Helm RICHTIG auf den Kopf – die Sandale gehört an den Fuß. rēctē = richtig, zu Recht.",
+      "scene": "Der Helm sitzt richtig auf dem Kopf.",
+      "prompt": "A Roman child proudly wears a helmet correctly on his head while a friend incorrectly wears a sandal on his head; teacher points approvingly to the correct helmet child. Focus right versus wrong, funny.",
+      "atlas": 7,
+      "panel": 0
+    },
+    {
+      "latin": "nōn iam",
+      "anchor": "Die Ente klaut den Kuchen: Der Kaiser kaut NICHT MEHR. nōn iam = nicht mehr.",
+      "scene": "Der Kaiser hat vorher gegessen; jetzt nicht mehr, weil die Ente den Kuchen trägt.",
+      "prompt": "A Roman emperor with fork and crumbs around his mouth now has an empty plate, while a mischievous duck runs off with the cake. Clear past eating has stopped, no food now.",
+      "atlas": 7,
+      "panel": 1
+    },
+    {
+      "latin": "sīc",
+      "anchor": "„Sieh: SO!“ Die Lehrerin zeigt die Eselsohren mit den Händen. Alle machen es genau SO nach. sīc = so.",
+      "scene": "Die Lehrerin zeigt es so; die Kinder machen die Bewegung nach.",
+      "prompt": "A friendly Roman teacher demonstrates making donkey ears with both hands above her head, two pupils copy precisely the same pose. Clear thus like this, playful synchronized gesture.",
+      "atlas": 7,
+      "panel": 2
+    }
+  ],
+  "finalPrompts": [
+    {
+      "atlas": 1,
+      "prompt": "Use case: illustration-story. Asset type: 2 by 2 scene atlas for a Latin mnemonic learning app for 11-year-old pupils. Create exactly FOUR equally sized square panels in a strict 2x2 grid, edges touching, NO gaps, NO borders. Each panel is an independent richly detailed funny illustrated story, watercolor and fine ink children's-book style, warm muted ochre, sage, terracotta, teal. Expressive Roman children, charming absurdity, crisp readable action, generous bright background, no violence. Each panel should have a single clear action and tell its own story. All important action in upper 78 percent. In EACH panel, integrate a large BLANK cream parchment nameplate horizontally at bottom center, occupying about 72 percent panel width and 16 percent height, centered at x=50%, y=90%. This will receive exact Latin lettering later in the app; leave completely empty. Do not put characters over this parchment. No text, no letters, no numbers, no speech balloons anywhere. Maintain square panels and exact grid so the app can display each separately.\nTOP LEFT: A teenage Roman boy named Tim launches instantly from a racing starting block with exaggerated rocket-like dust trails when a referee raises a starting flag. Funny, no actual rockets or fire.\nTOP RIGHT: A Roman emperor emphatically refuses an enormous bowl of white quark, crossing his arms with a comically horrified expression, a cook offering a spoon.\nBOTTOM LEFT: A Roman schoolboy repeatedly visits a fountain. Many looping muddy footprints lead to the fountain, three tiny earlier ghosted poses suggest repeated visits, while one other activity still exists. Funny thirsty boy with huge cup.\nBOTTOM RIGHT: A friendly Roman teen superhero with a cape and pyjama trousers helps a little duck across a puddle. Above him three small sun, rain cloud, moon icons indicate always, all times, no writing."
+    },
+    {
+      "atlas": 2,
+      "prompt": "Use case: illustration-story. Asset type: 2 by 2 scene atlas for a Latin mnemonic learning app for 11-year-old pupils. Create exactly FOUR equally sized square panels in a strict 2x2 grid, edges touching, NO gaps, NO borders. Each panel is an independent richly detailed funny illustrated story, watercolor and fine ink children's-book style, warm muted ochre, sage, terracotta, teal. Expressive Roman children, charming absurdity, crisp readable action, generous bright background, no violence. Each panel should have a single clear action and tell its own story. All important action in upper 78 percent. In EACH panel, integrate a large BLANK cream parchment nameplate horizontally at bottom center, occupying about 72 percent panel width and 16 percent height, centered at x=50%, y=90%. This will receive exact Latin lettering later in the app; leave completely empty. Do not put characters over this parchment. No text, no letters, no numbers, no speech balloons anywhere. Maintain square panels and exact grid so the app can display each separately.\nTOP LEFT: A tiny playful yellow submarine unexpectedly pops straight out of an ordinary Roman terracotta pot in a schoolroom. Two Roman teens jump in surprise, water splashes, absurd and harmless.\nTOP RIGHT: A Roman aunt with an enormous empty plate looks in disbelief at a single tiny cake crumb, next to an enormous cake protected by a mischievous duck. Focus on only one crumb.\nBOTTOM LEFT: A friendly cow wearing a Roman laurel wreath gives a flower to a surprised emperor. A schoolgirl points clearly at the RECEIVING emperor with a questioning expression. Recipient is visually emphasized.\nBOTTOM RIGHT: Roman children dine at a table; surprisingly a cheerful donkey joins them sitting upright with a napkin and spoon, even the donkey participates. Warm humorous."
+    },
+    {
+      "atlas": 3,
+      "prompt": "Use case: illustration-story. Asset type: 2 by 2 scene atlas for a Latin mnemonic learning app for 11-year-old pupils. Create exactly FOUR equally sized square panels in a strict 2x2 grid, edges touching, NO gaps, NO borders. Each panel is an independent richly detailed funny illustrated story, watercolor and fine ink children's-book style, warm muted ochre, sage, terracotta, teal. Expressive Roman children, charming absurdity, crisp readable action, generous bright background, no violence. Each panel should have a single clear action and tell its own story. All important action in upper 78 percent. In EACH panel, integrate a large BLANK cream parchment nameplate horizontally at bottom center, occupying about 72 percent panel width and 16 percent height, centered at x=50%, y=90%. This will receive exact Latin lettering later in the app; leave completely empty. Do not put characters over this parchment. No text, no letters, no numbers, no speech balloons anywhere. Maintain square panels and exact grid so the app can display each separately.\nTOP LEFT: A silly Roman teen drives a tiny chariot a second time around a round fountain, two looping sets of tracks, large repeated circular arrow built from flowers, no numbers or writing.\nTOP RIGHT: A donkey sneezes powerfully in a Roman courtyard, and as a direct consequence an emperor’s absurd curly wig flies off. Clear visible puff trail connects cause and effect, funny.\nBOTTOM LEFT: An eccentric Roman professor in oversized spectacles reveals a real little duck under a lifted purple cloth on a table. Two amazed students inspect the undeniable evidence with a magnifying glass.\nBOTTOM RIGHT: A Roman emperor clearly refuses a ridiculous cake made of sandals, palm held forward in a no gesture, closed mouth, chef confused. Large playful red crossed circle on the cake decoration, no letters."
+    },
+    {
+      "atlas": 4,
+      "prompt": "Use case: illustration-story. Asset type: 2 by 2 scene atlas for a Latin mnemonic learning app for 11-year-old pupils. Create exactly FOUR equally sized square panels in a strict 2x2 grid, edges touching, NO gaps, NO borders. Each panel is an independent richly detailed funny illustrated story, watercolor and fine ink children's-book style, warm muted ochre, sage, terracotta, teal. Expressive Roman children, charming absurdity, crisp readable action, generous bright background, no violence. Each panel should have a single clear action and tell its own story. All important action in upper 78 percent. In EACH panel, integrate a large BLANK cream parchment nameplate horizontally at bottom center, occupying about 72 percent panel width and 16 percent height, centered at x=50%, y=90%. This will receive exact Latin lettering later in the app; leave completely empty. Do not put characters over this parchment. No text, no letters, no numbers, no speech balloons anywhere. Maintain square panels and exact grid so the app can display each separately.\nTOP LEFT: A perfectly healthy donkey enjoys a luxurious Roman spa bath with cucumber slices on its eyes; a puzzled Roman schoolgirl shrugs at this absurd sight. Questioning why, comical.\nTOP RIGHT: A Roman schoolboy investigates a gigantic yellow quince fruit on a table with a magnifying glass, puzzled what this object is; fruit deliberately enormous and funny.\nBOTTOM LEFT: An enormous Roman school gong rings right now, three Roman children jump simultaneously at that very instant, dramatic concentric ringing motion, no written onomatopoeia.\nBOTTOM RIGHT: A Roman schoolgirl with hiccups points directly to a bright circle immediately around her own feet, a tiny surprised frog jumps right there. Clear HERE close to the viewer."
+    },
+    {
+      "atlas": 5,
+      "prompt": "Use case: illustration-story. Asset type: 2 by 2 scene atlas for a Latin mnemonic learning app for 11-year-old pupils. Create exactly FOUR equally sized square panels in a strict 2x2 grid, edges touching, NO gaps, NO borders. Each panel is an independent richly detailed funny illustrated story, watercolor and fine ink children's-book style, warm muted ochre, sage, terracotta, teal. Expressive Roman children, charming absurdity, crisp readable action, generous bright background, no violence. Each panel should have a single clear action and tell its own story. All important action in upper 78 percent. In EACH panel, integrate a large BLANK cream parchment nameplate horizontally at bottom center, occupying about 72 percent panel width and 16 percent height, centered at x=50%, y=90%. This will receive exact Latin lettering later in the app; leave completely empty. Do not put characters over this parchment. No text, no letters, no numbers, no speech balloons anywhere. Maintain square panels and exact grid so the app can display each separately.\nTOP LEFT: A Roman schoolboy in the near foreground points to a faraway statue across a courtyard; a funny oversized bee sits on that distant statue. Clear far distance with perspective.\nTOP RIGHT: A Roman gardener expects flowers in a flowerbed but instead shiny spoons sprout from the soil. He holds a packet illustrated with a flower without writing, comical strong contrast.\nBOTTOM LEFT: A ravenously hungry donkey happily munches a giant cake in a Roman kitchen, one hoof resting on its hungry belly, crumbs flying. A Roman child understands the reason and points at the belly.\nBOTTOM RIGHT: A donkey happily carries one small Roman writing tablet, while a sulking emperor is forced to walk beside it and is refused a ride. Clear addition and refusal; funny."
+    },
+    {
+      "atlas": 6,
+      "prompt": "Use case: illustration-story. Asset type: 2 by 2 scene atlas for a Latin mnemonic learning app for 11-year-old pupils. Create exactly FOUR equally sized square panels in a strict 2x2 grid, edges touching, NO gaps, NO borders. Each panel is an independent richly detailed funny illustrated story, watercolor and fine ink children's-book style, warm muted ochre, sage, terracotta, teal. Expressive Roman children, charming absurdity, crisp readable action, generous bright background, no violence. Each panel should have a single clear action and tell its own story. All important action in upper 78 percent. In EACH panel, integrate a large BLANK cream parchment nameplate horizontally at bottom center, occupying about 72 percent panel width and 16 percent height, centered at x=50%, y=90%. This will receive exact Latin lettering later in the app; leave completely empty. Do not put characters over this parchment. No text, no letters, no numbers, no speech balloons anywhere. Maintain square panels and exact grid so the app can display each separately.\nTOP LEFT: A Roman chef resolutely rejects BOTH a sandal and a sock offered for a cooking pot, pushing each away with a separate hand. Two clear refusal gestures, both objects remain outside soup.\nTOP RIGHT: A Roman child hosts a playful guessing game: an unidentified character under a white sheet has donkey hooves and ears sticking out, another child asks who it is. Comical mystery identity.\nBOTTOM LEFT: A cheerful Roman boy successfully balances an enormous multi-layer cake on one hand perfectly level, teacher gives a big thumbs up, little duck admires, clear doing something well.\nBOTTOM RIGHT: At a Roman school doorway the very first pupil in a queue steps through, his ridiculously tall feather plume sticks in the doorway, others clearly wait behind him. Clear first in sequence."
+    },
+    {
+      "atlas": 7,
+      "prompt": "Use case: illustration-story. Asset type: 2 by 2 scene atlas for a Latin mnemonic learning app for 11-year-old pupils. Create exactly FOUR equally sized square panels in a strict 2x2 grid, edges touching, NO gaps, NO borders. Each panel is an independent richly detailed funny illustrated story, watercolor and fine ink children's-book style, warm muted ochre, sage, terracotta, teal. Expressive Roman children, charming absurdity, crisp readable action, generous bright background, no violence. Each panel should have a single clear action and tell its own story. All important action in upper 78 percent. In EACH panel, integrate a large BLANK cream parchment nameplate horizontally at bottom center, occupying about 72 percent panel width and 16 percent height, centered at x=50%, y=90%. This will receive exact Latin lettering later in the app; leave completely empty. Do not put characters over this parchment. No text, no letters, no numbers, no speech balloons anywhere. Maintain square panels and exact grid so the app can display each separately.\nTOP LEFT: A Roman child proudly wears a helmet correctly on his head while a friend incorrectly wears a sandal on his head; teacher points approvingly to the correct helmet child. Focus right versus wrong, funny.\nTOP RIGHT: A Roman emperor with fork and crumbs around his mouth now has an empty plate, while a mischievous duck runs off with the cake. Clear past eating has stopped, no food now.\nBOTTOM LEFT: A friendly Roman teacher demonstrates making donkey ears with both hands above her head, two pupils copy precisely the same pose. Clear thus like this, playful synchronized gesture.\nBOTTOM RIGHT: A tidy Roman school desk with a friendly little duck sitting on a stack of books, no writing."
+    }
+  ]
+}
